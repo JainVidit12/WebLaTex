@@ -1,0 +1,236 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{soul}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  \textbf{\Huge \scshape Vidit Jain} \\ \vspace{1pt}
+  \small +1 951-866-3558 $|$ \href{mailto:vjain018@ucr.edu}{\ul{vjain018@ucr.edu}} $|$
+  \href{https://linkedin.com/in/viditjain1}{\ul{Linkedin}} $|$
+  \href{https://github.com/JainVidit12}{\ul{GitHub}}
+\end{center}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{State Street Global Advisors}{Oct 2018 -- Sep 2022}
+{Quantitative Developer - Senior Associate 2}{Bengaluru, India}
+\resumeItemListStart
+\resumeItem{Designed the streaming data flow to deliver live performance on trade baskets, enabling portfolio managers to execute bespoke strategies at scale. Used AWS MSK}
+\resumeItem{Built batch ELT pipelines to onboard new datasets to OLAP databases, including unit testing and data quality monitoring.}
+\resumeItem{Designed, Built and deployed a volume prediction model including continuous monitoring and integration. Reduced trading cost by 30\% during extreme market volatility. Used SparkML.}
+\resumeItem{Identified and successfully integrated two new signals into existing strategies after panel regression study, leading to excess return of 10 basis points on cumulative AUM USD 10 Billion.}
+\resumeItem{Tools used: Airflow, PySpark, AWS, Postgres, Kafka}
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+\resumeSubSubheading
+{Quantitative Developer - Senior Associate}{Bengaluru, India}
+\resumeItemListStart
+\resumeItem{Optimized backtesting data flow using AWS elasticache lazy loading, reducing subsequent reads query time by 70\%}
+\resumeItem{Led initiative to leverage intraday data including data cleaning, ETL and subsequent research. Led to 30\% less tracking error breaches in equity portfolios.}
+\resumeItemListEnd
+
+% -------------------------------------------
+\resumeSubSubheading
+{Quantitative Developer - Associate}{Bengaluru, India}
+\resumeItemListStart
+\resumeItem{Added security features and improved memory safety for the internal equity risk model and order management systems using new C++(14) features.}
+\resumeItem{Automated existing processes and tasks using Python(Pandas, Numpy) and FactSet API.}
+\resumeItemListEnd
+
+
+
+\resumeSubheading
+{Zenatix Solutions}{Jul 2018 -- Sep 2018}
+{Software Development Engineer}{Gurugram, India}
+\resumeItemListStart
+\resumeItem{Built an analytics dashboard to monitor power consumption and cold storage temperature metrics using ReactJS, DynamoDB, and NodeJS.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of California Riverside}{Riverside, CA}
+{MS in Computer Engineering $|$ GPA 4.0 / 4.0}{Jan. 2023 -- Mar 2024}
+\resumeSubheading
+{Indian Institute of Technology}{Jodhpur, India}
+{Bachelor's in Electrical Engineering $|$ GPA 7.5 / 10.0}{Aug. 2014 -- May 2018}
+\resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Online Optimization using LLMs and Reinforcement Learning} $|$ \emph{Master's Project} }
+{Sep 2023 -- Present}
+\resumeItemListStart
+\resumeItem{Built multi-agent LLM framework to adjust optimization parameters using natural languate input.}
+\resumeItem{Currently building Reinforcement learning policy to dynamically relax constraints based on changes in the problem}
+\resumeItem{Multi-Agent pipeline with Retrieval Augmented Generation (RAG) and safeguard mechanism to ensure reliability}
+\resumeItem{Built evaluation dataset also using LLM, used async programming to optimize it.}
+\resumeItem{Used OpenAI API and PyAutogen libraries}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Open Source Contributions} }
+{}
+\resumeItemListStart
+\resumeItem{\href{https://github.com/run-llama/llama_index}{\ul{Llama\_index}}: Developed methods to optimize token consumption}
+\resumeItem{\href{https://github.com/avhz/RustQuant}{\ul{RustQuant}}: Developed pricing models for fixed income instruments in Rust}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Languages}{: Python, C++, Java, SQL(Postgres, PL/pgSQL, MySQL)} \\
+                \textbf{Database/Frameworks}{: Apache Spark, SparkML, Apache Airflow, Kafka, Git} \\
+                \textbf{Cloud}{: AWS} \\
+                \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Pytorch}
+          }}
+\end{itemize}
+
+%
+%-----------Awards and Recognitions-----------
+\section{Awards and Recognitions }
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+  {Runner up 2015 \& 2016 IIT Jodhpur Microsoft code.fun.do hackathon. Built mobile apps for windows phone using Azure. } \\
+  {2016 \& 2017 Merit-Cum-Means scholarship covering 100\% tution fees awarded by Govt. of India}
+
+  }}
+\end{itemize}
+
+%-----------Coursework-----------
+% \section{Courses}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Graduate}{Machine Learning, Deep Learning, Real Time Systems, High Performance Computing, GPU Architecture and Parallel Programming, Natural Language Processing, Data Mining Techniques, Advanced Operating Systems.} \\
+%      {2016 \& 2017 Merit-Cum-Means scholarship covering 100\% tution fees awarded by Govt. of India} \\
+
+%     }}
+%  \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
